@@ -1,7 +1,9 @@
 import speech_recognition as sr
 import webbrowser
 import pyttsx3
+import musicLibrary
 
+#.
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
@@ -10,8 +12,15 @@ def speak(text):
     engine.runAndWait()
 
 def processCommand(c):
-    print(c)
-    pass
+    if "open google" in c.lower():
+        webbrowser.open("http://google.com")
+    elif "open facebook" in c.lower():
+        webbrowser.open("http://facebook.com")
+    elif "open youtube" in c.lower():
+        webbrowser.open("http://youtube.com")
+    elif "open linkdin" in c.lower():
+        webbrowser.open("http://linkdin.com")
+    
 
 if __name__ == "__main__":
     speak("initializing jarvis")

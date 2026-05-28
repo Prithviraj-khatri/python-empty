@@ -3,3 +3,4 @@ print(l)
 
 verticalTable = "\n".join(l)
 print(verticalTable)
+#.
