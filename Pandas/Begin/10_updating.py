@@ -9,7 +9,8 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
-# updating ---> df.loc[row-index,"column_name"] = new_value
+# updating ---> df.loc[row-index,"column_ name"] = new_value
 df.loc[0,'Salary'] = 55000
 print(df)
+
 
